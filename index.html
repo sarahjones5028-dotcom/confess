@@ -116,14 +116,26 @@
             }
         }
 
-        #name {
+        /* ប្រអប់សម្រាប់ពាក្យនៅកណ្តាល */
+        #text-container {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            margin-top: -20px;
+            text-align: center;
+            z-index: 10;
+        }
+
+        #name {
             font-size: 46px;
             color: #ea80b0;
+            margin-bottom: 10px;
+        }
+
+        #reaksa {
+            font-size: 36px;
+            color: #f1d5e4;
+            letter-spacing: 2px;
         }
     </style>
 </head>
@@ -133,8 +145,11 @@
 
     <canvas id="canvas" width="1920" height="947"></canvas>
 
-    <!-- បន្ថែមពាក្យ I Love You នៅកណ្តាលអេក្រង់ -->
-    <div id="name">I Love You</div>
+    <!-- ប្រអប់ដាក់ពាក្យ I Love You និង Reaksa -->
+    <div id="text-container">
+        <div id="name">I Love You</div>
+        <div id="reaksa">Reaksa</div>
+    </div>
 
     <script type="text/javascript">
         const colors = [
